@@ -2,9 +2,9 @@ package com.example.MovieProject.model;
 
 public class Movie {
 
-    String movieName;
-    String rating;
-    String releaseDate;
+    public String movieName;
+    public String rating;
+    public String releaseDate;
 
     public Movie(String movieName, String rating, String releaseDate) {
         this.movieName = movieName;
