@@ -1,16 +1,21 @@
 package com.example.MovieProject.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.*;
+
+//@Getter
+//@Setter
+//@ToString
+//@EqualsAndHashCode
+
+@Data
+@AllArgsConstructor
 public class Movie {
 
     public String movieName;
     public String rating;
     public String releaseDate;
 
-    public Movie(String movieName, String rating, String releaseDate) {
-        this.movieName = movieName;
-        this.rating = rating;
-        this.releaseDate = releaseDate;
-    }
-
-
+    @JsonIgnore
+    public String musicMaker;
 }

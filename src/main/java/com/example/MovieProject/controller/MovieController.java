@@ -15,7 +15,10 @@ public class MovieController {
 
     @GetMapping("/getMovies")
     Movie getMovies() {
-        return new Movie("Mission impossible", "8.5", "10-8-2023");
+       Movie movie= new Movie("Mission impossible", "8.5", "10-8-2023", "something");
+       movie.setRating("7.5");
+
+       return movie;
     }
 
     @GetMapping("/getDirector")
